@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://github.com/EOSC-synergy/SQAaaS
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.7
+      branch: release/1.7.8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-copper-pig.sh
-        container: qc.acc_nerdy-sepia-oyster
+        - /usr/bin/env sh .sqa/script.homely-burgundy-chameleon.sh
+        container: qc.acc_skimpy-amaranth-bombay
   QC.Doc:
     repos:
       github.com/EOSC-synergy/SQAaaS find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-olivine-bear.sh
-        container: qc.doc_smelly-yellow-flounder
+        - /usr/bin/env sh .sqa/script.shabby-azure-millipede.sh
+        container: qc.doc_dorky-gamboge-wombat
       github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-auburn-mammoth.sh
-        container: qc.doc_skinny-white-cat
+        - /usr/bin/env sh .sqa/script.randy-saffron-foxhound.sh
+        container: qc.doc_jumpy-cardinal-impala
       github.com/EOSC-synergy/SQAaaS markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-chocolate-starfish.sh
-        container: qc.doc_pokey-alizarin-macaw
+        - /usr/bin/env sh .sqa/script.lousy-auburn-coral.sh
+        container: qc.doc_scummy-salmon-tuatara
   QC.Lic:
     repos:
       github.com/EOSC-synergy/SQAaaS licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-blue-newfoundland.sh
-        container: qc.lic_gamy-chocolate-dalmatian
+        - /usr/bin/env sh .sqa/script.crappy-harlequin-serval.sh
+        container: qc.lic_gamy-vermilion-loon
   QC.Sty:
     repos:
       github.com/EOSC-synergy/SQAaaS hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-flax-gharial.sh
-        container: qc.sty_geeky-lilac-barb
+        - /usr/bin/env sh .sqa/script.wheezy-tomato-husky.sh
+        container: qc.sty_surly-peach-axolotl
   QC.Ver:
     repos:
       github.com/EOSC-synergy/SQAaaS get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-pear-numbat.sh
-        container: qc.ver_goopy-linen-retriever
-timeout: 1800
+        - /usr/bin/env sh .sqa/script.chewy-crimson-macaw.sh
+        container: qc.ver_zippy-chocolate-guppy
+timeout: 5400
