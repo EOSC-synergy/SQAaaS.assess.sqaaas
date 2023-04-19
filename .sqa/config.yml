@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-burgundy-chameleon.sh
-        container: qc.acc_skimpy-amaranth-bombay
+        - /usr/bin/env sh .sqa/script.crabby-champagne-devil.sh
+        container: qc.acc_hasty-khaki-chihuahua
   QC.Doc:
     repos:
       github.com/EOSC-synergy/SQAaaS find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-azure-millipede.sh
-        container: qc.doc_dorky-gamboge-wombat
+        - /usr/bin/env sh .sqa/script.lousy-amber-weasel.sh
+        container: qc.doc_snazzy-auburn-insect
       github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-saffron-foxhound.sh
-        container: qc.doc_jumpy-cardinal-impala
+        - /usr/bin/env sh .sqa/script.droopy-buff-bordeaux.sh
+        container: qc.doc_wimpy-champagne-zonkey
       github.com/EOSC-synergy/SQAaaS markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-auburn-coral.sh
-        container: qc.doc_scummy-salmon-tuatara
+        - /usr/bin/env sh .sqa/script.tacky-ecru-fish.sh
+        container: qc.doc_shabby-razzmatazz-chameleon
   QC.Lic:
     repos:
       github.com/EOSC-synergy/SQAaaS licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-harlequin-serval.sh
-        container: qc.lic_gamy-vermilion-loon
+        - /usr/bin/env sh .sqa/script.blurry-bistre-hamster.sh
+        container: qc.lic_snappy-orange-robin
   QC.Sty:
     repos:
       github.com/EOSC-synergy/SQAaaS hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-tomato-husky.sh
-        container: qc.sty_surly-peach-axolotl
+        - /usr/bin/env sh .sqa/script.cloudy-jade-mouse.sh
+        container: qc.sty_snappy-harlequin-ray
   QC.Ver:
     repos:
       github.com/EOSC-synergy/SQAaaS get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-crimson-macaw.sh
-        container: qc.ver_zippy-chocolate-guppy
+        - /usr/bin/env sh .sqa/script.lovely-magenta-cheetah.sh
+        container: qc.ver_boozy-goldenrod-mist
 timeout: 5400
