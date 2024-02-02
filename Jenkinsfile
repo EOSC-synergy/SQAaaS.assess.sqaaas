@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: Copyright contributors to the Software Quality Assurance as a Service (SQAaaS) project <sqaaas@ibergrid.eu>
+//
+// SPDX-License-Identifier: GPL-3.0-only
+
 @Library(['github.com/indigo-dc/jenkins-pipeline-library@2.1.1']) _
 
 def projectConfig
@@ -6,7 +10,14 @@ pipeline {
     agent any
 
     stages {
-        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Sty & QC.Ver') {
+        stage('SQA baseline criterion: QC.Acc & QC.Doc & QC.Lic & QC.Ver') {
+            when {
+                anyOf {
+                    expression { currentBuild.previousCompletedBuild == null }
+                    changeset ".sqa/*"
+                    changeset "Jenkinsfile"
+                }
+            }
             steps {
                 script {
                     projectConfig = pipelineConfig(

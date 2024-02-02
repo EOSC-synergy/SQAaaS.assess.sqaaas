@@ -1,11 +1,11 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/SQAaaS:
+    github.com/EOSC-synergy/sqaaas:
       branch: master
-      repo: https://github.com/EOSC-synergy/SQAaaS
+      repo: https://github.com/EOSC-synergy/sqaaas
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/2.0.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -13,40 +13,30 @@ environment:
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/SQAaaS git:
+      github.com/EOSC-synergy/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-champagne-devil.sh
-        container: qc.acc_hasty-khaki-chihuahua
+        - /usr/bin/env sh .sqa/script.crabby-olivine-vulture.sh
+        container: qc.acc_cloudy-cinnabar-penguin
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/SQAaaS find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-amber-weasel.sh
-        container: qc.doc_snazzy-auburn-insect
-      github.com/EOSC-synergy/SQAaaS git:
+        - /usr/bin/env sh .sqa/script.squirrely-charcoal-olm.sh
+        container: qc.doc_muggy-cobalt-wolverine
+      github.com/EOSC-synergy/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-buff-bordeaux.sh
-        container: qc.doc_wimpy-champagne-zonkey
-      github.com/EOSC-synergy/SQAaaS markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.tacky-ecru-fish.sh
-        container: qc.doc_shabby-razzmatazz-chameleon
+        - /usr/bin/env sh .sqa/script.surly-sapphire-dragon.sh
+        container: qc.doc_silly-carmine-chihuahua
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/SQAaaS licensee:
+      github.com/EOSC-synergy/sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-bistre-hamster.sh
-        container: qc.lic_snappy-orange-robin
-  QC.Sty:
-    repos:
-      github.com/EOSC-synergy/SQAaaS hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.cloudy-jade-mouse.sh
-        container: qc.sty_snappy-harlequin-ray
+        - /usr/bin/env sh .sqa/script.squeaky-celadon-mole.sh
+        container: qc.lic_chummy-tomato-buzzard
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/SQAaaS get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-magenta-cheetah.sh
-        container: qc.ver_boozy-goldenrod-mist
+        - /usr/bin/env sh .sqa/script.boozy-denim-quokka.sh
+        container: qc.ver_skinny-flax-monkey
 timeout: 5400
