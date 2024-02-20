@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-olivine-vulture.sh
-        container: qc.acc_cloudy-cinnabar-penguin
+        - /usr/bin/env sh .sqa/script.grumpy-sepia-cat.sh
+        container: qc.acc_beady-celadon-gerbil
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-charcoal-olm.sh
-        container: qc.doc_muggy-cobalt-wolverine
+        - /usr/bin/env sh .sqa/script.messy-sepia-urchin.sh
+        container: qc.doc_sunny-persimmon-snake
       github.com/EOSC-synergy/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-sapphire-dragon.sh
-        container: qc.doc_silly-carmine-chihuahua
+        - /usr/bin/env sh .sqa/script.ugly-linen-heron.sh
+        container: qc.doc_cranky-thistle-mongoose
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-celadon-mole.sh
-        container: qc.lic_chummy-tomato-buzzard
+        - /usr/bin/env sh .sqa/script.clammy-lilac-chicken.sh
+        container: qc.lic_muggy-green-stingray
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-denim-quokka.sh
-        container: qc.ver_skinny-flax-monkey
+        - /usr/bin/env sh .sqa/script.queasy-pumpkin-avocet.sh
+        container: qc.ver_slaphappy-mauve-hyrax
 timeout: 5400
