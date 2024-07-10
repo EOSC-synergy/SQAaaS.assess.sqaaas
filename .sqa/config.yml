@@ -1,52 +1,80 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/SQAaaS:
-      branch: master
-      repo: https://github.com/EOSC-synergy/SQAaaS
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/HPCI-Lab/sqaaas:
+      branch: main
+      repo: https://github.com/HPCI-Lab/sqaaas
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/SQAaaS git:
+      github.com/HPCI-Lab/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-champagne-devil.sh
-        container: qc.acc_hasty-khaki-chihuahua
+        - /usr/bin/env sh .sqa/script.squirrely-heliotrope-hyrax.sh
+        container: qc.acc_leaky-copper-dunker
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/SQAaaS find_doc_files.py:
+      github.com/HPCI-Lab/sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-amber-weasel.sh
-        container: qc.doc_snazzy-auburn-insect
-      github.com/EOSC-synergy/SQAaaS git:
+        - /usr/bin/env sh .sqa/script.cloudy-crimson-bulldog.sh
+        container: qc.doc_lousy-celadon-dragon
+      github.com/HPCI-Lab/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-buff-bordeaux.sh
-        container: qc.doc_wimpy-champagne-zonkey
-      github.com/EOSC-synergy/SQAaaS markdownlint:
+        - /usr/bin/env sh .sqa/script.cheeky-sepia-mandrill.sh
+        container: qc.doc_stuffy-copper-binturong
+      github.com/HPCI-Lab/sqaaas markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-ecru-fish.sh
-        container: qc.doc_shabby-razzmatazz-chameleon
+        - /usr/bin/env sh .sqa/script.scanty-olive-capybara.sh
+        container: qc.doc_homey-heliotrope-okapi
+      github.com/HPCI-Lab/sqaaas restructuredtext-lint:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-amethyst-bombay.sh
+        container: qc.doc_droopy-magenta-malamute
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/SQAaaS licensee:
+      github.com/HPCI-Lab/sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-bistre-hamster.sh
-        container: qc.lic_snappy-orange-robin
+        - /usr/bin/env sh .sqa/script.sunny-magnolia-axolotl.sh
+        container: qc.lic_homey-silver-frise
+  QC.Sec:
+    repos:
+      github.com/HPCI-Lab/sqaaas bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-razzmatazz-bobcat.sh
+        container: qc.sec_homey-asparagus-moose
   QC.Sty:
     repos:
-      github.com/EOSC-synergy/SQAaaS hadolint:
+      github.com/HPCI-Lab/sqaaas flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-jade-mouse.sh
-        container: qc.sty_snappy-harlequin-ray
+        - /usr/bin/env sh .sqa/script.pokey-jade-burmese.sh
+        container: qc.sty_lovely-olivine-burmese
+      github.com/HPCI-Lab/sqaaas hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-taupe-tetra.sh
+        container: qc.sty_craggy-xanthic-alligator
+      github.com/HPCI-Lab/sqaaas jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-crimson-dhole.sh
+        container: qc.sty_cloudy-cerulean-forest
+      github.com/HPCI-Lab/sqaaas oclint:
+        commands:
+        - /usr/bin/env sh .sqa/script.wheezy-orange-cheetah.sh
+        container: qc.sty_gamy-ruby-hare
+  QC.Uni:
+    repos:
+      github.com/HPCI-Lab/sqaaas commands:
+        commands:
+        - /usr/bin/env sh .sqa/script.dorky-auburn-millipede.sh
+        container: qc.uni_lovely-ruby-quoll
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/SQAaaS get_git_tags.py:
+      github.com/HPCI-Lab/sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-magenta-cheetah.sh
-        container: qc.ver_boozy-goldenrod-mist
+        - /usr/bin/env sh .sqa/script.lovely-tomato-tuatara.sh
+        container: qc.ver_cranky-magnolia-axolotl
 timeout: 5400
