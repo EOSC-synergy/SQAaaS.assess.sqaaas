@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/sqaaas &&
-    docker run --name unittests --privileged -v /var/run/docker.sock:/var/run/docker.sock sqaaas_yprov:v1.0
+    git rev-parse --is-inside-work-tree
 )

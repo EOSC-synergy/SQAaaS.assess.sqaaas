@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/sqaaas &&
-    oclint  -- -c
+    git rev-parse --is-inside-work-tree
 )

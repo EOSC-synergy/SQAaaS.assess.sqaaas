@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: release/2.0.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/HPCI-Lab/sqaaas:
       branch: main
@@ -15,66 +15,62 @@ sqa_criteria:
     repos:
       github.com/HPCI-Lab/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-heliotrope-hyrax.sh
-        container: qc.acc_leaky-copper-dunker
+        - /usr/bin/env sh .sqa/script.gloppy-persimmon-bison.sh
+        container: qc.acc_baggy-cerulean-termite
   QC.Doc:
     repos:
       github.com/HPCI-Lab/sqaaas find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-crimson-bulldog.sh
-        container: qc.doc_lousy-celadon-dragon
+        - /usr/bin/env sh .sqa/script.surly-crimson-hound.sh
+        container: qc.doc_homey-xanthic-bongo
       github.com/HPCI-Lab/sqaaas git:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-sepia-mandrill.sh
-        container: qc.doc_stuffy-copper-binturong
+        - /usr/bin/env sh .sqa/script.bluesy-jade-chameleon.sh
+        container: qc.doc_cozy-malachite-shark
       github.com/HPCI-Lab/sqaaas markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-olive-capybara.sh
-        container: qc.doc_homey-heliotrope-okapi
+        - /usr/bin/env sh .sqa/script.crabby-lavender-cuttlefish.sh
+        container: qc.doc_sunny-pumpkin-wolf
       github.com/HPCI-Lab/sqaaas restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-amethyst-bombay.sh
-        container: qc.doc_droopy-magenta-malamute
+        - /usr/bin/env sh .sqa/script.wiggy-gold-sloth.sh
+        container: qc.doc_hazy-bistre-bandicoot
   QC.Lic:
     repos:
       github.com/HPCI-Lab/sqaaas licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-magnolia-axolotl.sh
-        container: qc.lic_homey-silver-frise
+        - /usr/bin/env sh .sqa/script.shaky-dandelion-jackal.sh
+        container: qc.lic_fuzzy-linen-mau
   QC.Sec:
     repos:
       github.com/HPCI-Lab/sqaaas bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-razzmatazz-bobcat.sh
-        container: qc.sec_homey-asparagus-moose
+        - /usr/bin/env sh .sqa/script.gummy-magnolia-moorhen.sh
+        container: qc.sec_woolly-khaki-chow
   QC.Sty:
     repos:
       github.com/HPCI-Lab/sqaaas flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-jade-burmese.sh
-        container: qc.sty_lovely-olivine-burmese
+        - /usr/bin/env sh .sqa/script.gimpy-lilac-cuttlefish.sh
+        container: qc.sty_skinny-sapphire-baboon
       github.com/HPCI-Lab/sqaaas hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-taupe-tetra.sh
-        container: qc.sty_craggy-xanthic-alligator
+        - /usr/bin/env sh .sqa/script.shaky-denim-tarantula.sh
+        container: qc.sty_randy-smalt-foxhound
       github.com/HPCI-Lab/sqaaas jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-crimson-dhole.sh
-        container: qc.sty_cloudy-cerulean-forest
-      github.com/HPCI-Lab/sqaaas oclint:
-        commands:
-        - /usr/bin/env sh .sqa/script.wheezy-orange-cheetah.sh
-        container: qc.sty_gamy-ruby-hare
+        - /usr/bin/env sh .sqa/script.nerdy-celadon-bordeaux.sh
+        container: qc.sty_blurry-sapphire-vole
   QC.Uni:
     repos:
-      github.com/HPCI-Lab/sqaaas commands:
+      github.com/HPCI-Lab/sqaaas pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-auburn-millipede.sh
-        container: qc.uni_lovely-ruby-quoll
+        - /usr/bin/env sh .sqa/script.skimpy-ultramarine-newfoundland.sh
+        container: qc.uni_scanty-ochre-crocodile
   QC.Ver:
     repos:
       github.com/HPCI-Lab/sqaaas get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-tomato-tuatara.sh
-        container: qc.ver_cranky-magnolia-axolotl
+        - /usr/bin/env sh .sqa/script.muzzy-aquamarine-robin.sh
+        container: qc.ver_breezy-rust-toucan
 timeout: 5400
