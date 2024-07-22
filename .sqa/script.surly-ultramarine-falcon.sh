@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/sqaaas &&
-    mdl --json .
+    mdl --json  .
 )

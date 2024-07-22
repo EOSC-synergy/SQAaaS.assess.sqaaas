@@ -5,5 +5,5 @@
 
 (
 cd github.com/HPCI-Lab/sqaaas &&
-    licensee detect . --confidence 60 --json
+    licensee detect . --confidence 60 --json 
 )
