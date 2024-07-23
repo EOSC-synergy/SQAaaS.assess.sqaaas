@@ -110,7 +110,9 @@ services:
       type: bind
     working_dir: /sqaaas-build
   web:
-    build: .
+    build:
+      context: ./github.com/HPCI-Lab/sqaaas
+      dockerfile: Dockerfile
     restart: on-failure
     depends_on:
       - db
