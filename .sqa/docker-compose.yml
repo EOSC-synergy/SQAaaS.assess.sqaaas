@@ -99,6 +99,8 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
+    links: 
+      - db
   qc.ver_trippy-firebrick-anteater:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
