@@ -90,9 +90,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
   qc.uni_droopy-rose-sparrow:
-    build:
-      context: ./github.com/HPCI-Lab/sqaaas
-      dockerfile: Dockerfile
+    image: eoscsynergy/sqaaas-pytest:7.1.3-alpha
     command: sleep 6000000
     volumes:
     - source: ./
