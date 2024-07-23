@@ -6,7 +6,7 @@ config:
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/HPCI-Lab/sqaaas:
       branch: main
-      repo: https://github.com/HPCI-Lab/sqaaas
+      repo: https://github.com/orviz/yprov-sqaaas
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
