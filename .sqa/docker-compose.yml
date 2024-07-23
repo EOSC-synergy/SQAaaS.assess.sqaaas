@@ -92,7 +92,7 @@ services:
   qc.uni_droopy-rose-sparrow:
     image: eoscsynergy/sqaaas-pytest:7.1.3-alpha
     command: >
-      bash -c "pip install requests
+      sh -c "pip install requests
       && sleep 6000000"
     volumes:
     - source: ./
