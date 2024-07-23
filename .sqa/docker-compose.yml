@@ -90,6 +90,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
   qc.uni_droopy-rose-sparrow:
+    network_mode: "host"
     image: eoscsynergy/sqaaas-pytest:7.1.3-alpha
     command: >
       sh -c "pip install requests
@@ -110,6 +111,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
   web:
+    network_mode: "host"
     build:
       context: ./github.com/HPCI-Lab/sqaaas
       dockerfile: Dockerfile
@@ -129,6 +131,7 @@ services:
     volumes:
       - yprov_data:/app/conf
   db:
+    network_mode: "host"
     image: "neo4j:enterprise"
     ports:
       - "7474:7474"
