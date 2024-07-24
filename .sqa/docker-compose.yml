@@ -149,6 +149,4 @@ volumes:
   neo4j_data:
   neo4j_logs:
   yprov_data:
-networks:
-  yprov_net:
 version: '3.7'
