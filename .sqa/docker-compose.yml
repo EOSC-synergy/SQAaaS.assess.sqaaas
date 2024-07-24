@@ -120,8 +120,6 @@ services:
       - db
     links: 
       - db
-    networks:
-      - yprov_net
     ports:
       - "3000:3000"
     environment:
@@ -142,8 +140,6 @@ services:
     volumes:
       - neo4j_data:/data
       - neo4j_logs:/logs
-    networks:
-      - yprov_net
     healthcheck:
         test: ["CMD", "curl", "-f", "http://db:7474"]
         interval: 30s
