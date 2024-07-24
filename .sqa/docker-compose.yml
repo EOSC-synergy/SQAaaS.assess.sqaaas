@@ -110,7 +110,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
   web:
-    command: sleep 6000000
+    container_name: web
     build:
       context: ./github.com/HPCI-Lab/sqaaas
       dockerfile: Dockerfile
@@ -126,7 +126,7 @@ services:
     volumes:
       - yprov_data:/app/conf
   db:
-    command: sleep 6000000
+    container_name: db
     image: "neo4j:enterprise"
     ports:
       - "7474:7474"
