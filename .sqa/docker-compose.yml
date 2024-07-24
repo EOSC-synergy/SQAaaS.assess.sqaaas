@@ -99,8 +99,6 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-    links: 
-      - web
   qc.ver_trippy-firebrick-anteater:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
@@ -112,13 +110,12 @@ services:
       type: bind
     working_dir: /sqaaas-build
   web:
+    command: sleep 6000000
     build:
       context: ./github.com/HPCI-Lab/sqaaas
       dockerfile: Dockerfile
     restart: on-failure
     depends_on:
-      - db
-    links: 
       - db
     ports:
       - "3000:3000"
@@ -129,6 +126,7 @@ services:
     volumes:
       - yprov_data:/app/conf
   db:
+    command: sleep 6000000
     image: "neo4j:enterprise"
     ports:
       - "7474:7474"
