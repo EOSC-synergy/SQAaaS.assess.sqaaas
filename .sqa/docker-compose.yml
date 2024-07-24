@@ -100,7 +100,7 @@ services:
       type: bind
     working_dir: /sqaaas-build
     links: 
-      - db
+      - web
   qc.ver_trippy-firebrick-anteater:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
