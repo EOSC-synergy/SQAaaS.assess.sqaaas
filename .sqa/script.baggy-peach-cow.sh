@@ -5,5 +5,6 @@
 
 (
 cd github.com/HPCI-Lab/sqaaas &&
+    ping -c1 web &&
     python3 -m pytest -v
 )
