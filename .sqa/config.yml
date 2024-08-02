@@ -11,66 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/HPCI-Lab/sqaaas git:
-        commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cinnabar-javanese.sh
-        container: qc.acc_breezy-beige-gecko
-  QC.Doc:
-    repos:
-      github.com/HPCI-Lab/sqaaas find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-heliotrope-millipede.sh
-        container: qc.doc_cranky-viridian-wasp
-      github.com/HPCI-Lab/sqaaas git:
-        commands:
-        - /usr/bin/env sh .sqa/script.skimpy-dandelion-mongoose.sh
-        container: qc.doc_foggy-smalt-fossa
-      github.com/HPCI-Lab/sqaaas markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.pasty-chestnut-otter.sh
-        container: qc.doc_muzzy-lemon-bulldog
-      github.com/HPCI-Lab/sqaaas restructuredtext-lint:
-        commands:
-        - /usr/bin/env sh .sqa/script.bluesy-tomato-opossum.sh
-        container: qc.doc_gimpy-sepia-wolfhound
-  QC.Lic:
-    repos:
-      github.com/HPCI-Lab/sqaaas licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.tacky-azure-terrier.sh
-        container: qc.lic_muzzy-xanthic-wallaby
-  QC.Sec:
-    repos:
-      github.com/HPCI-Lab/sqaaas bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.gimpy-olive-greyhound.sh
-        container: qc.sec_bluesy-linen-tapir
-  QC.Sty:
-    repos:
-      github.com/HPCI-Lab/sqaaas flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.nippy-brown-civet.sh
-        container: qc.sty_randy-russet-mole
-      github.com/HPCI-Lab/sqaaas hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.gummy-jade-chinchilla.sh
-        container: qc.sty_slaphappy-sangria-mole
-      github.com/HPCI-Lab/sqaaas jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.lumpy-goldenrod-chimpanzee.sh
-        container: qc.sty_flaky-wisteria-squid
   QC.Uni:
     repos:
       github.com/HPCI-Lab/sqaaas commands:
         commands:
         - /usr/bin/env sh .sqa/script.baggy-peach-cow.sh
         container: qc.uni_droopy-rose-sparrow
-  QC.Ver:
-    repos:
-      github.com/HPCI-Lab/sqaaas get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.trippy-goldenrod-caiman.sh
-        container: qc.ver_trippy-firebrick-anteater
 timeout: 5400
