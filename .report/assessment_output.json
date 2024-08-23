@@ -1,12 +1,12 @@
 {
     "meta": {
-        "version": "3.0.0",
-        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/sqaaas.assess.sqaaas/master/.report/assessment_output.json"
+        "version": "3.2.0",
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/SQAaaS.assess.sqaaas/master/.report/assessment_output.json"
     },
     "repository": [
         {
-            "url": "https://github.com/EOSC-synergy/sqaaas",
-            "name": "EOSC-synergy/sqaaas",
+            "url": "https://github.com/EOSC-synergy/SQAaaS",
+            "name": "EOSC-synergy/SQAaaS",
             "tag": "master",
             "commit_id": "ca6333efec3cfd534934473c681cf7e3f8c609cf",
             "is_main_repo": true,
@@ -35,7 +35,7 @@
                             "message": "Source code uses Git for version control",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-boolean",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "git",
@@ -46,16 +46,16 @@
                                     "reviewed": "2021-12-30"
                                 },
                                 "ci": {
-                                    "name": "QC.Acc github.com/EOSC-synergy/sqaaas git",
+                                    "name": "QC.Acc github.com/EOSC-synergy/SQAaaS git",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/34/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/34/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -87,7 +87,7 @@
                             "message": "A README file is present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -98,16 +98,16 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/EOSC-synergy/sqaaas find_doc_files.py",
+                                    "name": "QC.Doc github.com/EOSC-synergy/SQAaaS find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 3822}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -138,7 +138,7 @@
                             "message": "A CODE_OF_CONDUCT file is not present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -149,16 +149,16 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/EOSC-synergy/sqaaas find_doc_files.py",
+                                    "name": "QC.Doc github.com/EOSC-synergy/SQAaaS find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 3822}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -190,7 +190,7 @@
                             "message": "A CONTRIBUTING file is not present in the code repository",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-find_doc_files",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "find_doc_files.py",
@@ -201,16 +201,16 @@
                                     "reviewed": "2022-01-26"
                                 },
                                 "ci": {
-                                    "name": "QC.Doc github.com/EOSC-synergy/sqaaas find_doc_files.py",
+                                    "name": "QC.Doc github.com/EOSC-synergy/SQAaaS find_doc_files.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "find_doc_files.py --file_type all"
                                     ],
                                     "stdout_text": "{\"README\": [{\"file_name\": \"README.md\", \"size\": 3822}], \"CODE_OF_CONDUCT\": [], \"CONTRIBUTING\": []}",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/43/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/43/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -242,7 +242,7 @@
                             "message": "Documentation resides in the same repository as code",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-boolean",
-                                "version": "1.2.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "git",
@@ -250,16 +250,200 @@
                                 "version": null,
                                 "docker": null,
                                 "ci": {
-                                    "name": "QC.Doc github.com/EOSC-synergy/sqaaas git",
+                                    "name": "QC.Doc github.com/EOSC-synergy/SQAaaS git",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "git rev-parse --is-inside-work-tree"
                                     ],
                                     "stdout_text": "true",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/52/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/52/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {}
+                        }
+                    ],
+                    "valid": true
+                },
+                "QC.Doc02.X": {
+                    "description": "Are docs following a style for the Markdown markup language?",
+                    "requirement_level": "MAY",
+                    "hint": "When using a docs-as-code approach, the style of the markup language is being checked. SQAaaS relies on <a href=\"https://github.com/markdownlint/markdownlint/\" target=\"_blank\">markdownlint</a> for Markdown files and <a href=\"https://github.com/twolfson/restructuredtext-lint/\" target=\"_blank\">restructuredtext-lint</a> for reStructuredText",
+                    "evidence": [
+                        {
+                            "valid": false,
+                            "message": "Docs are not fully compliant with markdownlint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-markdownlint",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "markdownlint",
+                                "lang": "Markdown",
+                                "version": "0.11.0",
+                                "docker": {
+                                    "dockerfile": "QC.Doc/markdownlint/Dockerfile",
+                                    "reviewed": "1970-01-01"
+                                },
+                                "ci": {
+                                    "name": "QC.Doc github.com/EOSC-synergy/SQAaaS markdownlint",
+                                    "status": "FAILED",
+                                    "stdout_command": [
+                                        "mdl --json ."
+                                    ],
+                                    "stdout_text": "[{\"filename\":\"./README.md\",\"line\":89,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./README.md\",\"line\":93,\"rule\":\"MD004\",\"aliases\":[\"ul-style\"],\"description\":\"Unordered list style\"},{\"filename\":\"./README.md\",\"line\":67,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./README.md\",\"line\":72,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./README.md\",\"line\":74,\"rule\":\"MD009\",\"aliases\":[\"no-trailing-spaces\"],\"description\":\"Trailing spaces\"},{\"filename\":\"./README.md\",\"line\":14,\"rule\":\"MD012\",\"aliases\":[\"no-multiple-blanks\"],\"description\":\"Multiple consecutive blank lines\"},{\"filename\":\"./README.md\",\"line\":3,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":5,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":34,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":74,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":75,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":76,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":86,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD013\",\"aliases\":[\"line-length\"],\"description\":\"Line length\"},{\"filename\":\"./README.md\",\"line\":7,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":17,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":46,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":53,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":59,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":65,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":73,\"rule\":\"MD022\",\"aliases\":[\"blanks-around-headers\"],\"description\":\"Headers should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":69,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":71,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":78,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":90,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":92,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":94,\"rule\":\"MD031\",\"aliases\":[\"blanks-around-fences\"],\"description\":\"Fenced code blocks should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":18,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":56,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":63,\"rule\":\"MD032\",\"aliases\":[\"blanks-around-lists\"],\"description\":\"Lists should be surrounded by blank lines\"},{\"filename\":\"./README.md\",\"line\":5,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":8,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":9,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":10,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":11,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":101,\"rule\":\"MD033\",\"aliases\":[\"no-inline-html\"],\"description\":\"Inline HTML\"},{\"filename\":\"./README.md\",\"line\":51,\"rule\":\"MD036\",\"aliases\":[\"no-emphasis-as-header\"],\"description\":\"Emphasis used instead of a header\"},{\"filename\":\"./README.md\",\"line\":99,\"rule\":\"MD036\",\"aliases\":[\"no-emphasis-as-header\"],\"description\":\"Emphasis used instead of a header\"}]",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/61/log?consoleFull"
+                                },
+                                "level": "RECOMMENDED",
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
+                            },
+                            "standard": {
+                                "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
+                                "version": "v4.0",
+                                "url": "https://github.com/indigo-dc/sqa-baseline/releases/tag/v4.0"
+                            },
+                            "data_unstructured": {
+                                "./README.md": {
+                                    "MD004": {
+                                        "description": "Unordered list style",
+                                        "line": [
+                                            89,
+                                            93
+                                        ]
+                                    },
+                                    "MD009": {
+                                        "description": "Trailing spaces",
+                                        "line": [
+                                            67,
+                                            72,
+                                            74
+                                        ]
+                                    },
+                                    "MD012": {
+                                        "description": "Multiple consecutive blank lines",
+                                        "line": [
+                                            14
+                                        ]
+                                    },
+                                    "MD013": {
+                                        "description": "Line length",
+                                        "line": [
+                                            3,
+                                            5,
+                                            9,
+                                            10,
+                                            11,
+                                            34,
+                                            74,
+                                            75,
+                                            76,
+                                            86,
+                                            101
+                                        ]
+                                    },
+                                    "MD022": {
+                                        "description": "Headers should be surrounded by blank lines",
+                                        "line": [
+                                            7,
+                                            17,
+                                            46,
+                                            53,
+                                            59,
+                                            65,
+                                            73
+                                        ]
+                                    },
+                                    "MD031": {
+                                        "description": "Fenced code blocks should be surrounded by blank lines",
+                                        "line": [
+                                            69,
+                                            71,
+                                            78,
+                                            90,
+                                            92,
+                                            94
+                                        ]
+                                    },
+                                    "MD032": {
+                                        "description": "Lists should be surrounded by blank lines",
+                                        "line": [
+                                            18,
+                                            56,
+                                            63
+                                        ]
+                                    },
+                                    "MD033": {
+                                        "description": "Inline HTML",
+                                        "line": [
+                                            5,
+                                            8,
+                                            9,
+                                            10,
+                                            11,
+                                            101
+                                        ]
+                                    },
+                                    "MD036": {
+                                        "description": "Emphasis used instead of a header",
+                                        "line": [
+                                            51,
+                                            99
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "valid": false,
+                    "required_for_next_level_badge": false
+                }
+            },
+            "coverage": {
+                "percentage": 40,
+                "total_subcriteria": 5,
+                "success_subcriteria": 2
+            }
+        },
+        "QC.Sty": {
+            "valid": true,
+            "subcriteria": {
+                "QC.Sty01": {
+                    "description": "Is the software product following a style standard for Dockerfile files?",
+                    "requirement_level": "MUST",
+                    "hint": "Please check & solve the security weaknesses found by the linter tool",
+                    "evidence": [
+                        {
+                            "valid": true,
+                            "message": "Dockerfile files are compliant with hadolint standard",
+                            "plugin": {
+                                "name": "report2sqaaas-plugin-jenkins_exit_status",
+                                "version": "2.1.0"
+                            },
+                            "tool": {
+                                "name": "hadolint",
+                                "lang": "Dockerfile",
+                                "version": "v2.8.0-0-g398770f-dirty",
+                                "docker": {
+                                    "image": "hadolint/hadolint:2.8.0-alpine",
+                                    "reviewed": "2021-06-21"
+                                },
+                                "ci": {
+                                    "name": "QC.Sty github.com/EOSC-synergy/SQAaaS hadolint",
+                                    "status": "SUCCESS",
+                                    "stdout_command": [
+                                        "hadolint docker/nginx-sidecar/Dockerfile docker/api-stage/Dockerfile --failure-threshold error"
+                                    ],
+                                    "stdout_text": "docker/nginx-sidecar/Dockerfile:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly\ndocker/api-stage/Dockerfile:1 DL3006 \u001b[1m\u001b[93mwarning\u001b[0m: Always tag the version of an image explicitly\ndocker/api-stage/Dockerfile:7 DL3042 \u001b[1m\u001b[93mwarning\u001b[0m: Avoid use of cache directory with pip. Use `pip install --no-cache-dir <package>`",
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/79/log?consoleFull"
+                                },
+                                "level": "REQUIRED",
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -273,9 +457,9 @@
                 }
             },
             "coverage": {
-                "percentage": 50,
-                "total_subcriteria": 4,
-                "success_subcriteria": 2
+                "percentage": 100,
+                "total_subcriteria": 1,
+                "success_subcriteria": 1
             }
         },
         "QC.Ver": {
@@ -291,7 +475,7 @@
                             "message": "The code repository does not use tags for releasing new software versions",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -302,16 +486,16 @@
                                     "reviewed": "2022-05-10"
                                 },
                                 "ci": {
-                                    "name": "QC.Ver github.com/EOSC-synergy/sqaaas get_git_tags.py",
+                                    "name": "QC.Ver github.com/EOSC-synergy/SQAaaS get_git_tags.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/88/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -334,7 +518,7 @@
                             "message": "Latest release tag None found, but is not SemVer compliant",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -345,16 +529,16 @@
                                     "reviewed": "2022-05-10"
                                 },
                                 "ci": {
-                                    "name": "QC.Ver github.com/EOSC-synergy/sqaaas get_git_tags.py",
+                                    "name": "QC.Ver github.com/EOSC-synergy/SQAaaS get_git_tags.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/88/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -377,7 +561,7 @@
                             "message": "All release tags are SemVer compliant",
                             "plugin": {
                                 "name": "report2sqaaas-plugin-is_semver",
-                                "version": "1.0.0"
+                                "version": "2.1.0"
                             },
                             "tool": {
                                 "name": "get_git_tags.py",
@@ -388,16 +572,16 @@
                                     "reviewed": "2022-05-10"
                                 },
                                 "ci": {
-                                    "name": "QC.Ver github.com/EOSC-synergy/sqaaas get_git_tags.py",
+                                    "name": "QC.Ver github.com/EOSC-synergy/SQAaaS get_git_tags.py",
                                     "status": "SUCCESS",
                                     "stdout_command": [
                                         "get_git_tags.py"
                                     ],
                                     "stdout_text": "[]",
-                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/2/execution/node/70/log?consoleFull"
+                                    "url": "https://jenkins.eosc-synergy.eu/job/eosc-synergy-org/job/SQAaaS.assess.sqaaas/job/master/6/execution/node/88/log?consoleFull"
                                 },
                                 "level": "REQUIRED",
-                                "build_repo": "https://github.com/eosc-synergy/sqaaas.assess.sqaaas"
+                                "build_repo": "https://github.com/eosc-synergy/SQAaaS.assess.sqaaas"
                             },
                             "standard": {
                                 "title": "A set of Common Software Quality Assurance Baseline Criteria for Research Projects",
@@ -449,28 +633,6 @@
                         {
                             "valid": false,
                             "message": "No matching files found for language <Python> in repository searching by extensions or filenames\nNo matching files found for language <Go> in repository searching by extensions or filenames"
-                        }
-                    ],
-                    "required_for_next_level_badge": false
-                }
-            },
-            "coverage": {
-                "percentage": 0,
-                "total_subcriteria": 1,
-                "success_subcriteria": 0
-            }
-        },
-        "QC.Sty": {
-            "valid": false,
-            "subcriteria": {
-                "QC.Sty01": {
-                    "description": "Is the software product following a style standard for {lang_name} files?",
-                    "valid": false,
-                    "hint": "Please check & solve the security weaknesses found by the linter tool",
-                    "evidence": [
-                        {
-                            "valid": false,
-                            "message": "No matching files found for language <Dockerfile> in repository searching by extensions or filenames\nNo matching files found for language <JSON> in repository searching by extensions or filenames\nNo matching files found for language <Python> in repository searching by extensions or filenames\nNo matching files found for language <Go> in repository searching by extensions or filenames\nNo matching files found for language <Ruby> in repository searching by extensions or filenames\nNo matching files found for language <Java> in repository searching by extensions or filenames"
                         }
                     ],
                     "required_for_next_level_badge": false
@@ -568,13 +730,13 @@
             "criteria": {
                 "bronze": {
                     "to_fulfill": [
-                        "QC.Acc",
+                        "QC.Doc",
                         "QC.Lic",
-                        "QC.Doc"
+                        "QC.Acc"
                     ],
                     "missing": [
-                        "QC.Lic",
-                        "QC.Doc"
+                        "QC.Doc",
+                        "QC.Lic"
                     ],
                     "fulfilled": [
                         "QC.Acc"
@@ -582,17 +744,17 @@
                 },
                 "silver": {
                     "to_fulfill": [
+                        "QC.Lic",
                         "QC.Acc",
                         "QC.Doc",
-                        "QC.Lic",
                         "QC.Ver",
                         "QC.Met"
                     ],
                     "missing": [
                         "QC.Lic",
-                        "QC.Met",
+                        "QC.Doc",
                         "QC.Ver",
-                        "QC.Doc"
+                        "QC.Met"
                     ],
                     "fulfilled": [
                         "QC.Acc"
@@ -600,26 +762,26 @@
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Acc",
-                        "QC.Sty",
-                        "QC.Doc",
-                        "QC.Lic",
                         "QC.Uni",
+                        "QC.Sty",
+                        "QC.Lic",
+                        "QC.Acc",
+                        "QC.Doc",
                         "QC.Ver",
                         "QC.Sec",
                         "QC.Met"
                     ],
                     "missing": [
-                        "QC.Sty",
-                        "QC.Lic",
                         "QC.Uni",
-                        "QC.Met",
+                        "QC.Lic",
+                        "QC.Doc",
                         "QC.Ver",
                         "QC.Sec",
-                        "QC.Doc"
+                        "QC.Met"
                     ],
                     "fulfilled": [
-                        "QC.Acc"
+                        "QC.Acc",
+                        "QC.Sty"
                     ]
                 }
             },
