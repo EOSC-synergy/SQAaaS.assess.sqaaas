@@ -1,21 +1,22 @@
 services:
   qc.uni_droopy-rose-sparrow:
-    image: eoscsynergy/sqaaas-pytest:7.1.3-alpha
-    command: >
-      sh -c "pip install requests
-      && sleep 6000000"
     volumes:
     - source: ./
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
+    image: hpci/yprov-sqa:1.4
+    depends_on:
+      - web
+    networks:
+      - yprov_net
   web:
     container_name: web
-    build:
-      context: ./github.com/HPCI-Lab/sqaaas
-      dockerfile: Dockerfile.1
+    image: hpci/yprov:latest
     restart: on-failure
     depends_on:
+      - db
+    links:
       - db
     ports:
       - "3000:3000"
@@ -38,13 +39,20 @@ services:
     volumes:
       - neo4j_data:/data
       - neo4j_logs:/logs
+    networks:
+      - yprov_net
     healthcheck:
         test: ["CMD", "curl", "-f", "http://db:7474"]
         interval: 30s
         timeout: 10s
         retries: 5
+
 volumes:
   neo4j_data:
   neo4j_logs:
   yprov_data:
+
+networks:
+  yprov_net:
+
 version: '3.7'
