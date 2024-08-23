@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/EOSC-synergy/sqaaas &&
-    licensee detect . --confidence 60 --json
+cd github.com/EOSC-synergy/SQAaaS &&
+    get_git_tags.py
 )

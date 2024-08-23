@@ -1,11 +1,11 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/sqaaas:
+    github.com/EOSC-synergy/SQAaaS:
       branch: master
-      repo: https://github.com/EOSC-synergy/sqaaas
+      repo: https://github.com/EOSC-synergy/SQAaaS
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.0.0
+      branch: release/2.0.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -13,30 +13,40 @@ environment:
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/sqaaas git:
+      github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-sepia-cat.sh
-        container: qc.acc_beady-celadon-gerbil
+        - /usr/bin/env sh .sqa/script.smelly-firebrick-mist.sh
+        container: qc.acc_trippy-rose-dalmatian
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/sqaaas find_doc_files.py:
+      github.com/EOSC-synergy/SQAaaS find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-sepia-urchin.sh
-        container: qc.doc_sunny-persimmon-snake
-      github.com/EOSC-synergy/sqaaas git:
+        - /usr/bin/env sh .sqa/script.stinky-sepia-antelope.sh
+        container: qc.doc_snoopy-cream-toucan
+      github.com/EOSC-synergy/SQAaaS git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-linen-heron.sh
-        container: qc.doc_cranky-thistle-mongoose
+        - /usr/bin/env sh .sqa/script.blurry-carmine-skunk.sh
+        container: qc.doc_gloppy-xanthic-zebu
+      github.com/EOSC-synergy/SQAaaS markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-amaranth-affenpinscher.sh
+        container: qc.doc_boozy-green-rhinoceros
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/sqaaas licensee:
+      github.com/EOSC-synergy/SQAaaS licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-lilac-chicken.sh
-        container: qc.lic_muggy-green-stingray
+        - /usr/bin/env sh .sqa/script.slimy-wisteria-newt.sh
+        container: qc.lic_wiggy-taupe-manatee
+  QC.Sty:
+    repos:
+      github.com/EOSC-synergy/SQAaaS hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-lime-dollar.sh
+        container: qc.sty_cloudy-magnolia-baboon
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas get_git_tags.py:
+      github.com/EOSC-synergy/SQAaaS get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-pumpkin-avocet.sh
-        container: qc.ver_slaphappy-mauve-hyrax
+        - /usr/bin/env sh .sqa/script.blurry-amber-bandicoot.sh
+        container: qc.ver_surly-pink-hyrax
 timeout: 5400
